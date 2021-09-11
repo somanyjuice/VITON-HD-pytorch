@@ -23,6 +23,7 @@ class VITONDataset(data.Dataset):
         # load data list
         img_names = []
         c_names = []
+        # test_pairs.txt를 만들어야 함.
         with open(osp.join(opt.dataset_dir, opt.dataset_list), 'r') as f:
             for line in f.readlines():
                 img_name, c_name = line.strip().split()
